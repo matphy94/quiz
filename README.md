@@ -19,8 +19,6 @@ terraform apply quiz
 ---
 
 Schedule deploy cluster task
-0 9 * * 1-5 ./cluster_deploy.sh
-0 18 * * 1-5 ./cluster_destroy.sh
 ```
 echo "0 9 * * 1-5 ./cluster_deploy.sh" >> clustercron
 echo "0 18 * * 1-5 ./cluster_destroy.sh" >> clustercron
