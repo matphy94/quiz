@@ -17,3 +17,8 @@ terraform apply quiz
 ```
 
 ---
+
+Consider use below code to get CLB's external IP
+```
+echo kubectl -n hello-world get svc hello-world-2 -o jsonpath='{.status.loadBalancer.ingress[*].hostname}'
+```
