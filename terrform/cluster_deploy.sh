@@ -1,3 +1,4 @@
+terraform init
 terraform plan -out quiz
 terraform apply quiz
 aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
