@@ -12,6 +12,8 @@ Requirements
 
 Basic Usage
 ```
+cd ./terraform/
+terraform init
 terraform plan -out quiz
 terraform apply quiz
 ```
