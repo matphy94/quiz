@@ -64,3 +64,5 @@ cd ../script
 You may have to adjust the PATH in scheduler.sh
 It will create cronjob, while deploy the cluster on every weekday at 9am, and destroy the cluster on every weekday 6pm.
 Nothing happened on Saturday and Sunday.
+
+
