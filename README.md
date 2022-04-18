@@ -41,21 +41,21 @@ Scenario:
 Include a script to destroy the cluster and also provide steps to deploy scheduler it to run at a predefined time of day.
 
 ## I am assuming that we will need a script to deploy the resources every day in 9pm and
-##a script to destroy the resources every day in 6pm for 
-##developer to work during the working hour,
-##So we will have 2 scripts scheduled to run every weekday.
+a script to destroy the resources every day in 6pm for developer to work during the working hour,
+So we will have 2 scripts scheduled to run every weekday. ##
 ------------------------------------------------------------------
 1) Please clone the repository
-2) Please go into terraform directory and run
+2) Please go into **terraform** directory and run
 ```
 ./cluster_deploy.sh
 ```
-It will use terraform and deploy the cluster. Once the cluster is deployed, then in28min/hello-world-rest-api will be deployed on it.
+It will use terraform and deploy the cluster. Once the cluster is deployed, then in28min/hello-world-rest-api 0.0.1 RELEASE will be deployed on it
+The service is exposed with loadbalancer and will be scaled based on CPU usage > 80% , with 2 instances minimum and 5 instances maximum.
 3) Please run if you want to destroy the cluster, it will delete deployment/services etc on the cluster.
 ```
 ./cluster_destroy.sh
 ```
-4) Please go into script directory and run scheduler.sh for scheduler deployment
+4) Please go into **script** directory and run scheduler.sh for scheduler deployment
 ```
 cd ../script
 ./scheduler.sh
