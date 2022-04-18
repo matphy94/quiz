@@ -52,6 +52,7 @@ So we will have 2 scripts scheduled to run every weekday.
 ```
 It will use terraform and deploy the cluster. Once the cluster is deployed, then in28min/hello-world-rest-api 0.0.1 RELEASE will be deployed on it
 The service is exposed with loadbalancer and will be scaled based on CPU usage > 80% , with 2 instances minimum and 5 instances maximum.
+
 3) Please run if you want to destroy the cluster, it will delete deployment/services etc on the cluster.
 ```
 ./cluster_destroy.sh
