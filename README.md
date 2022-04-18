@@ -35,7 +35,7 @@ Consider use below code to get CLB's external IP
 echo kubectl -n hello-world get svc hello-world-2 -o jsonpath='{.status.loadBalancer.ingress[*].hostname}'
 ```
 ---
-##Step by Step explaination##
+**Step by Step explaination**
 
 Scenario:
 Include a script to destroy the cluster and also provide steps to deploy scheduler it to run at a predefined time of day.
@@ -43,7 +43,8 @@ Include a script to destroy the cluster and also provide steps to deploy schedul
  I am assuming that we will need a script to deploy the resources every day in 9pm and
 a script to destroy the resources every day in 6pm for developer to work during the working hour,
 So we will have 2 scripts scheduled to run every weekday. 
-------------------------------------------------------------------
+
+
 1) Please clone the repository
 2) Please go into **terraform** directory and run
 ```
