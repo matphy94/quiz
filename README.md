@@ -13,9 +13,9 @@ Requirements
 Basic Usage
 ```
 cd ./terraform/
-terraform init
-terraform plan -out quiz
-terraform apply quiz
+./cluster_deploy.sh
+./cluster_destroy.sh
+
 ```
 
 ---
